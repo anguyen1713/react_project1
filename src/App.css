@@ -7,11 +7,15 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+/* used comment to remove spinning eff */
+
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite .8s linear;
   }
-}
+} */
+
+
 
 .App-header {
   background-color: #282c34;
