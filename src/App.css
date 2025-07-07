@@ -1,11 +1,15 @@
 .App {
   text-align: center;
+  z-index: 1;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  z-index: 1;
+
 }
+
 
 /* used comment to remove spinning eff */
 
@@ -19,17 +23,34 @@
 
 .App-header {
   background-color: #282c34;
+  position: relative;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(247, 246, 246)
+  color: rgb(247, 246, 246);
+  font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  z-index: 1;
+  
+}
+
+.App-bodytext { /* added this in manually - make sure to add a class to change the body text's font */ 
+  font-size: calc(10px + 1vmin);
+  position: relative;
+  color: rgb(247, 246, 246);
+  font-family: 'Times New Roman', Times, serif;
+  z-index: 1;
+
+
 }
 
 .App-link {
   color: #61dafb;
+  position: relative;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  z-index: 1;
 }
 
 @keyframes App-logo-spin {
@@ -40,3 +61,18 @@
     transform: rotate(360deg);
   }
 }
+
+.backy {
+  background-image: url('IMG_6874.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left:0;
+  
+  width: 100%;
+  z-index: 0; 
+}
+
