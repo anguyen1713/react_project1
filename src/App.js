@@ -26,7 +26,7 @@ function LikeButton() {
   )
 }
 
-
+/* for the <p>, fix. them */
 
 
 function App() {
