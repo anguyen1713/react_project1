@@ -1,3 +1,5 @@
+/* import statements for images */
+
 import brnrc from './brnracing.avif';
 import IEEE_logo from './IEEE_logo.jpeg';
 import IEEE_robot from './IEEE_robots.jpeg';
