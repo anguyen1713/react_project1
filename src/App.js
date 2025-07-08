@@ -6,9 +6,34 @@ import IEEE_robot from './IEEE_robots.jpeg';
 import pc from './IMG_6874.jpg';
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+
+
+function LikeButton() {
+  const [likes, setLikes] = useState(0);
+
+  function likeFunction() {
+    console.log("Button clicked! Likes: ", likes);
+    setLikes(likes +1)
+  }
+
+  return (
+    <div>
+      <button className='Appbutt' onClick={likeFunction}>
+        Like the page! </button>
+      <p> Likes: {likes}</p>
+    </div>
+  )
+}
+
+
+
 
 function App() {
+  
   return (
+
+
     <div className="App">
       <header className="App-header">
         <img src={brnrc} className="App-logo" alt="brnrc" />
@@ -33,9 +58,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Watch the Bruin Racing intro!
-        </a>
-
-      
+        </a>        
 
         <h2>IEEE Achievements</h2>
         <p>
@@ -74,10 +97,13 @@ function App() {
         </p>
 
         <img src={pc} className = 'backy' alt="background" />
+
+        <LikeButton />
       </header>
     </div>
   );
 }
+
 
 
 

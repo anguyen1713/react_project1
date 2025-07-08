@@ -77,3 +77,8 @@
   z-index: 0; 
 }
 
+.Appbutt {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color:rgb(2, 12, 21);
+  z-index: 2;
+}
