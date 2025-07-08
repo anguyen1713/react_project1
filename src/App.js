@@ -37,9 +37,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={brnrc} className="App-logo" alt="brnrc" />
-        <p>
-          This is a link to the IEEE Homepage!
-        </p>
+        <p> This is a link to the IEEE Homepage! </p> 
         <a
           className="App-link"
           href="https://www.ieeebruins.com"
