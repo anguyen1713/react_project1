@@ -8,6 +8,22 @@ import logo from './logo.svg';
 import './App.css';
 import React, { useState, useEffect } from 'react';
 
+function ScrollHalfButton() {
+  function scrollHalfway() {
+    // Scrolls vertically to half the total page height smoothly
+    window.scrollTo({
+      top: document.body.scrollHeight / 2,
+      behavior: 'smooth',
+    });
+  }
+
+  return (
+    <button onClick={scrollHalfway} style={{ padding: '10px 20px', fontSize: '16px' }}>
+      Scroll Halfway Down
+    </button>
+  );
+}
+
 
 function LikeButton() {
   const [likes, setLikes] = useState(0);
@@ -45,6 +61,11 @@ function App() {
         >
           IEEE Homepage.
         </a>
+
+        <ScrollHalfButton />
+
+
+
         <p>This is the intro to Bruin Racing, UCLA's racing team.</p>
         <a
           className="App-link"
