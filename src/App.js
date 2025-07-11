@@ -35,7 +35,7 @@ function LikeButton() {
   return (
     <div>
       <button onClick={likeFunction}> 
-        Like the page! </button>
+        Like the page! cool</button>
       <p> Likes: {likes}</p>
     </div>
   )
